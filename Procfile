@@ -1,1 +1,1 @@
-veb: http-server dist
+veb: npm server
