@@ -1,1 +1,1 @@
-server: http-server dist
+veb: http-server dist
