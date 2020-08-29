@@ -1,0 +1,1 @@
+veb: npm run server
