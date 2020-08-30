@@ -19,6 +19,20 @@ export const pageContents = {
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
 
+export const infoContents = {
+  title: 'WELCOME',
+  subtitle: 'How can I HELP YOU!!!',
+  text: 'You can Do whatever you want',
+};
+
+export const faqContents = {
+  title: 'Ask Question',
+  question1: '1. Loren ipsum',
+  question2: '2. Loren ipsum',
+  question3: '3. Loren ipsum',
+  
+};
+
 export const listData = {
   title: 'Things to do <sup>soon!</sup>',
   description: 'Interesting things I want to check out!',
