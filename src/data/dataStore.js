@@ -93,6 +93,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'List-2',
+    title: 'The beast of <sup>You!</sup>',
+    description: 'Unleash the Beast In You',
+    image: 'https://howtokickbutt.com/wp-content/uploads/2016/06/Its-High-Time-To-Unleash-The-Beast-In-You.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Til DEBT do us part',
+    description: 'Stress free, Debt free life',
+    image: 'https://www.ireenesiniakis.com/wp-content/uploads/2016/03/Depositphotos_5348553_s-2015.jpg',
+  },
 ];
 
 const columns = [

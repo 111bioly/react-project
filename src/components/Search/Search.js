@@ -2,17 +2,19 @@ import React from 'react';
 import styles from './Search.scss';
 import Button from '../Button/Button';
 import Container from '../Container/Container';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
+import {withRouter} from 'react-router';
 import Icon from '../Icon/Icon';
 
 class Search extends React.Component {
   static propTypes = {
-    text: PropTypes.string,
-    searchString: PropTypes.string,
-    changeSearchString: PropTypes.func,
-    countVisible: PropTypes.number,
-    countAll: PropTypes.number,
+    text: propTypes.string,
+    searchString: propTypes.string,
+    changeSearchString: propTypes.func,
+    countVisible: propTypes.number,
+    countAll: propTypes.number,
+    history: propTypes.any,
   }
 
   static defaultProps = {
@@ -31,7 +33,8 @@ class Search extends React.Component {
   }
 
   handleOK(){
-    this.props.changeSearchString(this.state.value);
+    //this.props.changeSearchString(this.state.value);
+    this.props.history.push(`/search/${this.state.value}`);
   }
 
   componentDidUpdate(prevProps){
@@ -65,4 +68,4 @@ class Search extends React.Component {
   }
 }
 
-export default Search;
+export default withRouter(Search);
